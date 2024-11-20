@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar" role="banner">
+      <div class="logo">VENIA</div>
+      <div class="container">
+        <nav class="nav-center" role="navigation" aria-label="Main Navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Smart Gear</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggleSidebar" class="toggle-btn" aria-label="Toggle Sidebar">
+        ☰
+      </button>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container">
+        <h1>Welcome to Our Store</h1>
+      </div>
+    </section>
+
+    <main>
+      <!-- Sidebar -->
+      <aside id="filterSidebar" class="sidebar">
+        <button id="closeSidebar" class="close-btn" aria-label="Close Sidebar">
+          ✖
+        </button>
+        <h2>Filters</h2>
+        <div class="filter-options">
+          <label
+            ><input
+              type="checkbox"
+              class="filter-checkbox"
+              value="electronics"
+            />
+            Electronics</label
+          >
+          <label
+            ><input type="checkbox" class="filter-checkbox" value="jewelery" />
+            Jewelry</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="filter-checkbox"
+              value="men's clothing"
+            />
+            Men's Clothing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              class="filter-checkbox"
+              value="women's clothing"
+            />
+            Women's Clothing</label
+          >
+        </div>
+      </aside>
+
+      <!-- Product Section -->
+      <section class="products-section">
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search products..."
+            aria-label="Search products"
+          />
+        </div>
+        <div id="loader" class="loader">Loading...</div>
+        <div id="productCount"></div>
+        <div id="productGrid" class="product-grid"></div>
+        <button id="loadMoreBtn" class="load-more">Load More</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <p>&copy; 2024 venia ltd. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
